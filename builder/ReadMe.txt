@@ -1,4 +1,4 @@
-Builder Pattern Implementation
+## Steps to create Builder Pattern 
 
 1.Create a class with all the attributes ,getters and setters .
 
@@ -15,3 +15,16 @@ Builder Pattern Implementation
 7.Make sure that you have provided a private constructor in the outer class with Builder class as argument
 
 
+
+
+## Builders are more useful in situations like the following:
+
+
+1.The builder pattern is obviously a creational pattern, but the main intent of the builder pattern is to solve the problem of telescoping constuctors. 
+
+2.It's also a good pattern when you need construction in a very controlled and incremental fashion.
+
+3.You want to create an immutable object (and hence can't use setters)
+
+4.If you have complicated factory logic that cannot easily be expressed with simple getters and setters or that you want to re-use in different ways
+(Occasionally) when you want to have different parts of the code base configure different aspects of the builder for some reason.
